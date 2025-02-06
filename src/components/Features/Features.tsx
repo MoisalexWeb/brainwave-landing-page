@@ -3,15 +3,11 @@ import { improveIcon, connectIcon, askIcon, fastIcon } from "./importImages.ts"
 import { useLanguageContext } from "../../context/useLanguageContext.ts"
 import data from "./language.json"
 import { Swiper, SwiperSlide } from "swiper/react"
-import { Pagination, Navigation } from "swiper/modules"
-import SwiperCore from "swiper"
-import "swiper/css"
+// import "swiper/css"
 import "./Features.scss"
 
 export const Features = () => {
     const { language } = useLanguageContext()
-
-    SwiperCore.use([Pagination, Navigation]);
 
     return (
         <section className="features" id="features">
@@ -21,8 +17,7 @@ export const Features = () => {
                 breakpoints={{
                     700: { width: 700, slidesPerView: 2, spaceBetween: 20 },
                     1000: { width: 1000, slidesPerView: 3, spaceBetween: 20 },
-                  }}
-                modules={[Pagination, Navigation]}
+                }}
                 spaceBetween={20}
                 slidesPerView={1}
                 slidesPerGroup={1}
