@@ -1,0 +1,67 @@
+.pricing {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 0;
+
+    &__legend {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(173, 168, 195);
+        font-family: "M PLUS Code Latin", serif;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 15px;
+        grid-gap: 5px;
+        margin-bottom: 10px;
+    }
+
+    &-title {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        grid-gap: 20px;
+
+        @media screen and (min-width: 1100px) {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .pricing {
+        padding: 90px 0;
+    }
+    .pricing__legend {
+        font-size: 20px;
+
+        &-img {
+            width: 15px;
+            height: 35px;
+        }
+    }
+
+    .pricing-title {
+        font-size: 45px;
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .pricing__legend {
+        font-size: 25px;
+    }
+
+    .pricing-title {
+        font-size: 55px;
+    }
+}

@@ -1,0 +1,39 @@
+.brands {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+
+    @media screen and (min-width: 768px) {
+        padding: 70px 0;
+    }
+
+    @media screen and (min-width: 900px) {
+        padding: 100px 0;
+    }
+
+    &-text {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 17px;
+        color: rgba(255, 255, 255, 0.5);
+        line-height: 1.4;
+
+        @media screen and (min-width: 768px) {
+            font-size: 20px;
+        }
+    }
+
+    &__images {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        grid-gap: 10px 30px;
+
+        &-img {
+            width: 170px;   
+            height: 50px;
+        }
+    }
+}

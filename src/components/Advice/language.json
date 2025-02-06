@@ -1,0 +1,16 @@
+{
+    "en": {
+        "inputText": "ask anything",
+        "legend": "how it works",
+        "title": "get persinalized advices",
+        "paragraph": "Based on the conversation with the AI chatbot, you will receive personalized recommendations related to your queries. The chatbot is trained to understand your preferences and provide customized suggestions.",
+        "ctaText": "connect now"
+    },
+    "es": {
+        "inputText": "pregunta cualquier cosa",
+        "legend": "cómo funciona",
+        "title": "obtén consejos personalizados",
+        "paragraph": "Basado en la conversación con el chatbot de IA, recibirás recomendaciones personalizadas relacionadas con tus consultas. El chatbot está entrenado para entender tus preferencias y proporcionar sugerencias personalizadas.",
+        "ctaText": "conéctate ahora"
+    }
+}

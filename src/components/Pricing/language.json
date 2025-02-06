@@ -1,0 +1,64 @@
+{
+    "en": {
+        "title": "Pay once, use forever",
+        "legend": "Get started with Brainwave",
+        "basic": {
+            "title": "basic",
+            "subtitle": "AI chatbot, personalized recommendations",
+            "price": "10.00",
+            "feature1": "An AI chatbot that can understand your queries",
+            "feature2": "Personalized recommendations based on your preferences",
+            "feature3": "Ability to explore the app and its features without any cost",
+            "ctaText": "get started"
+        },
+        "premium": {
+            "title": "premium",
+            "subtitle": "Advanced AI chatbot, priority support, analytics dashboard",
+            "price": "19.99",
+            "feature1": "An advanced AI chatbot that can understand complex queries",
+            "feature2": "An analytics dashboard to track your conversations",
+            "feature3": "Priority support to solve issues quickly",
+            "ctaText": "get started"
+        },
+        "enterprise": {
+            "title": "enterprise",
+            "subtitle": "Custom AI chatbot, advanced analytics, dedicated account",
+            "price": "29.99",
+            "feature1": "An advanced AI chatbot that can understand complex queries",
+            "feature2": "Personalized recommendations based on your preferences",
+            "feature3": "Ability to explore the app and its features without any cost",
+            "ctaText": "get started"
+        }
+    },
+    "es": {
+        "title": "Paga una vez, úsalo para siempre",
+        "legend": "Empieza con Brainwave",
+        "basic": {
+            "title": "básico",
+            "subtitle": "Recomendaciones personalizadas del chatbot de IA",
+            "price": "10.00",
+            "feature1": "Un chatbot de IA que puede entender tus consultas",
+            "feature2": "Recomendaciones personalizadas basadas en tus preferencias",
+            "feature3": "Capacidad de explorar la aplicación y sus funciones sin ningún costo",
+            "ctaText": "comienza"
+        },
+        "premium": {
+            "title": "premium",
+            "subtitle": "Chatbot de IA avanzado, soporte prioritario, panel de análisis",
+            "price": "19.99",
+            "feature1": "Un chatbot de IA avanzado que puede entender consultas complejas",
+            "feature2": "Un panel de análisis para rastrear tus conversaciones",
+            "feature3": "Soporte prioritario para resolver problemas rápidamente",
+            "ctaText": "comienza"
+        },
+        "enterprise": {
+            "title": "empresarial",
+            "subtitle": "Chatbot de IA personalizado, análisis avanzados, cuenta dedicada",
+            "price": "29.99",
+            "feature1": "Un chatbot de IA que puede entender tus consultas",
+            "feature2": "Recomendaciones personalizadas basadas en tus preferencias",
+            "feature3": "Capacidad de explorar la aplicación y sus funciones sin ningún costo",
+            "ctaText": "comienza"
+        }
+    }
+}

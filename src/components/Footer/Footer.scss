@@ -1,0 +1,128 @@
+.footer {
+    padding: 50px 0;
+    background-color: rgb(21, 19, 29);
+
+    &__container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 40px;
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 30px;
+        align-items: center;
+
+        &-logo {
+            width: 190px;
+        }
+
+        &__links {
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-items: center;
+            text-align: center;
+            grid-gap: 20px;
+
+            @media screen and (min-width: 530px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+    
+            &-link {
+                color: rgba(255, 255, 255, 0.5);
+                text-transform: uppercase;
+                transition: color 0.2s;
+                font-size: 17px;
+                font-weight: 500;
+    
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+    }    
+
+    &__copy {
+        border-top: 1px solid rgba(199, 185, 185, 0.1);
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        grid-gap: 20px;
+
+        &-text {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 18px;
+        }
+    }
+
+    &__social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-gap: 15px;
+        flex-wrap: wrap;
+        
+        &__link {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgb(27, 27, 46);
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: rgb(37 33 52);
+            }
+
+            svg {
+                width: 22px;
+                height: 22px;
+                fill: rgb(117, 113, 133);
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .footer {
+        padding: 70px 0;
+
+        &__nav {
+            flex-direction: row;
+            justify-content: space-between;
+    
+            &__links {
+                grid-template-columns: repeat(4, max-content);
+            }
+        }
+
+        &__copy {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__social {
+            justify-content: end;
+            grid-gap: 20px;
+
+            &__link {
+                width: 50px;
+                height: 50px;
+
+                svg {
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,72 @@
+.cardFeature {
+    position: relative;
+    margin: 0 auto;
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 40px 20px;
+    background-color: rgb(14, 12, 21,);
+    max-width: 500px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: background-color 0.2s;
+
+    &:hover {
+        background-color: rgb(14, 12, 21, 0.9);
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        background-image: url(/robot2.webp);
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: cover;
+        z-index: -1;
+    }
+
+    &-title::first-letter {
+        text-transform: uppercase;
+    }
+
+    &-title {
+        font-weight: 400;
+        font-size: 22px;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+    }
+
+    &-text {
+        color: rgb(173, 168, 195);
+        line-height: 1.4;
+    }
+
+    &__cta {
+        // margin-top: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-link {
+            color: #fff;
+            display: inline-flex;
+            align-items: center;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 500;
+            grid-gap: 10px;
+            cursor: pointer;
+
+            svg {
+                fill: #fff;
+            }
+        }
+    }
+}

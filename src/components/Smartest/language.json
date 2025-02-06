@@ -1,0 +1,22 @@
+{
+    "en": {
+        "title": "Generative AI made for creators.",
+        "subtitle": "Brainwave unlocks the potential of AI-powered applications",
+        "cardTitle": "Smartest AI",
+        "cardSubtitle": "Brainwave unlocks the potential of AI-powered applications",
+        "item1": "photo generating",
+        "item2": "photo enhance",
+        "item3": "seamless integration",
+        "imputText": "AI is generating |"
+    },
+    "es": {
+        "title": "IA generativa hecha para creadores.",
+        "subtitle": "Brainwave desbloquea el potencial de las aplicaciones impulsadas por IA",
+        "cardTitle": "La IA más inteligente",
+        "cardSubtitle": "Brainwave desbloquea el potencial de las aplicaciones impulsadas por IA",
+        "item1": "Generación de fotos",
+        "item2": "mejora de fotos",
+        "item3": "integración perfecta",
+        "imputText": "La IA está generando |"
+    }
+}

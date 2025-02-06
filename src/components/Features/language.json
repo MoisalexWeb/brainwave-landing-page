@@ -1,0 +1,42 @@
+{
+    "en": {
+        "sectionTitle": "Chat Smarter, Not Harder with Brainwave",
+        "ctaText": "explore more",
+        "feature1": {
+            "title": "ask anything",
+            "text": "Lets users quickly find answers to their questions without having to search through multiple sources."
+        },
+        "feature2": {
+            "title": "Improve everyday",
+            "text": "The app uses natural language processing to understand user queries and provide accurate and relevant responses."
+        },
+        "feature3": {
+            "title": "Connect everywhere",
+            "text": "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient."
+        },
+        "feature4": {
+            "title": "Fast responding",
+            "text": "Lets users quickly find answers to their questions without having to search through multiple sources."
+        }
+    },
+    "es": {
+        "sectionTitle": "Chatea de manera más inteligente, no más difícil, con Brainwave",
+        "ctaText": "explora más",
+        "feature1": {
+            "title": "pregunta lo que quieras",
+            "text": "Permite a los usuarios encontrar rápidamente respuestas a sus preguntas sin tener que buscar en múltiples fuentes."
+        },
+        "feature2": {
+            "title": "Mejora cada día",
+            "text": "La aplicación utiliza procesamiento de lenguaje natural para entender las consultas de los usuarios y proporcionar respuestas precisas y relevantes."
+        },
+        "feature3": {
+            "title": "Conéctate en todas partes",
+            "text": "Conéctate con el chatbot de IA desde cualquier lugar, en cualquier dispositivo, haciéndolo más accesible y conveniente."
+        },
+        "feature4": {
+            "title": "Respuesta rápida",
+            "text": "Permite a los usuarios encontrar rápidamente respuestas a sus preguntas sin tener que buscar en múltiples fuentes."
+        }
+    }
+}

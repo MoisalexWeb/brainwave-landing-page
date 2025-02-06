@@ -1,0 +1,206 @@
+.nav {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(14, 12, 21, 0.9);
+    border-bottom: 1px solid rgb(37, 33, 52);
+    height: 70px;
+    transition: background-color 0.3s;
+    backdrop-filter: blur(5px);
+
+    &__container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    &__links {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100vw;
+        z-index: 100;
+        height: 100vh;
+        background-color: rgb(14, 12, 21);
+        background-image: url(/robot-bg.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        grid-gap: 25px;
+        opacity: 0;
+        transition: opacity 0.3s;
+        pointer-events: none;
+
+        @mixin linkContainerMobile() {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 25px;
+            text-align: center;
+        }
+
+        @mixin linkMobile() {
+            font-size: 25px;
+            font-family: "M PLUS Code Latin", serif;
+            text-transform: uppercase;
+            color: #fff;
+            font-weight: 400;
+            transition: color 0.3s;
+
+            &:hover {
+                color: rgb(172, 106, 255);
+            }
+        }
+
+        &__ul {
+            @include linkContainerMobile();
+
+            &-link {
+                @include linkMobile();
+            }
+        }
+
+        &__account {
+            @include linkContainerMobile();
+
+            &-link {
+                @include linkMobile();
+            }
+        }
+    }
+
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        grid-gap: 15px;
+
+        &-flag {
+            width: 30px;
+            height: 30px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        &__hamburger {
+            display: flex;
+            align-items: center;
+            width: 30px;
+            height: 22px;
+            border: none;
+            position: relative;
+            cursor: pointer;
+    
+            &-line {
+                display: block;
+                background-color: #fff;
+                width: 100%;
+                height: 3px;
+                transition: all .3s ease;
+                border-radius: 20px;
+                
+                &--one {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+    
+                &--three {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                }
+            }
+        }
+    }
+
+    .nav__figure-logo {
+        width: 170px;
+    }
+
+
+    // Cuando el menu esta activo
+    &.show-menu {
+        background-color: rgb(14, 12, 21);
+    }
+    &.show-menu .nav__buttons__hamburger-line--one {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    &.show-menu .nav__buttons__hamburger-line--three {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    &.show-menu .nav__buttons__hamburger-line--two {
+        width: 0;
+        opacity: 0;
+    }
+
+    &.show-menu &__links {
+        opacity: 1;
+        pointer-events: unset;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .nav__buttons__hamburger {
+        display: none;
+        visibility: hidden;
+    }
+
+    .nav__container {
+        grid-gap: 40px;
+    }
+
+    .nav__links {
+        opacity: 1;
+        pointer-events: unset;
+        background: none;
+        position: static;
+        height: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        &__ul, &__account {
+            display: flex;
+            grid-gap: 20px;
+        }
+
+        &__ul-link, &__account-link {
+            font-size: 14px;
+            font-weight: 500;
+            font-family: "Roboto", serif;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .nav {
+        height: 90px;
+
+        &__container {
+            grid-gap: 70px;
+        }
+
+        & &__figure-logo {
+            width: 190px;
+        }
+    }
+
+    .nav__links__ul-link,
+    .nav__links__account-link {
+        font-size: 15px;
+    }
+}

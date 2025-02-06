@@ -1,0 +1,14 @@
+{
+    "en": {
+        "features": "features",
+        "pricing": "pricing",
+        "how": "how it works",
+        "started": "get started"
+    },
+    "es": {
+        "features": "Características",
+        "pricing": "precios",
+        "how": "Cómo funciona",
+        "started": "comienza"
+    }
+}

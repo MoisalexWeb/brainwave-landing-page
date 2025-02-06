@@ -1,0 +1,26 @@
+.scroll-top {
+    position: fixed;
+    bottom: -80px;
+    right: 5%;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(27, 27, 46);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    box-shadow: 0 0 10px rgb(221, 225, 184, 0.3);
+    cursor: pointer;
+    transition: bottom 0.2s;
+
+    &.show-scroll-btn {
+        bottom: 30px;
+    }
+
+    svg {
+        fill: #fff;
+        width: 45px;
+        height: 45px;
+    }
+}
